@@ -19,7 +19,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script src="script.js"></script>
-<!-- <script src="flipcard.js"></script> -->
+
+<script src="sidenav.js"></script>
 </head>
 <body>
   <div id="mySidenav" class="sidenav">
@@ -45,29 +46,144 @@
         XiaoFen</a>
 
     </div>
-
     <button class="dropdown-btn">Chapters  <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-container">
       <a href="#">Chapter One</a>
       <a href="#">Chapter Two</a>
       <a href="#">Chapter Three</a>
-
-
     </div>
-
-
     <a href="#">About</a>
-
-
-
-
-
-
   </div>
   <br>
   <span style="font-size:15px;cursor:pointer" onclick="openNav()"> &nbsp; &nbsp;&nbsp;&nbsp;&#9776;</span>
-  <!-- <span style="font-size:15px;cursor:pointer" onclick="openNav()"> &nbsp; &nbsp;&nbsp;<img id="sidemenu" src="images/sidemenu.gif" width=8%></span> -->
+  <div class="cardcontainer">
+      <div class="deck">
+          <div class="card xirancard">
+            <div class="front face" id="card0front">
+                <a href="javascript:void(0)" class="closecard" >&times;</a>
+
+              <button class="flip rad-button">Know More</button>
+
+            </div>
+
+            <div class="back face" id="card0back">
+            <button class="return flip"><i class="fa fa-undo"></i></button>
+            </div>
+          </div>
+        </div>
+    </div>
+  <div class="cardcontainer">
+    <div class="deck">
+        <div class="card lornacard">
+          <div class="front face" id="card1front">
+              <a href="javascript:void(0)" class="closecard" >&times;</a>
+            <button class="flip rad-button">Know More</button>
+
+          </div>
+
+          <div class="back face" id="card1back">
+          <button class="return flip"><i class="fa fa-undo"></i></button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="cardcontainer">
+    <div class="deck">
+        <div class="card momcard">
+          <div class="front face" id="card2front">
+              <a href="javascript:void(0)" class="closecard" >&times;</a>
+            <button class="flip rad-button">Know More</button>
+
+          </div>
+
+          <div class="back face" id="card2back">
+          <button class="return flip"><i class="fa fa-undo"></i></button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="cardcontainer">
+    <div class="deck">
+        <div class="card yucard">
+          <div class="front face" id="card3front">
+              <a href="javascript:void(0)" class="closecard" >&times;</a>
+            <button class="flip rad-button">Know More</button>
+
+          </div>
+
+          <div class="back face" id="card3back">
+          <button class="return flip"><i class="fa fa-undo"></i></button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="cardcontainer">
+    <div class="deck">
+        <div class="card joshcard">
+          <div class="front face" id="card4front">
+              <a href="javascript:void(0)" class="closecard" >&times;</a>
+            <button class="flip rad-button">Know More</button>
+
+          </div>
+
+          <div class="back face" id="card4back">
+          <button class="return flip"><i class="fa fa-undo"></i></button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="cardcontainer">
+    <div class="deck">
+        <div class="card yefancard">
+          <div class="front face" id="card5front">
+              <a href="javascript:void(0)" class="closecard" >&times;</a>
+            <button class="flip rad-button">Know More</button>
+
+          </div>
+
+          <div class="back face" id="card5back">
+          <button class="return flip"><i class="fa fa-undo"></i></button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="cardcontainer">
+    <div class="deck">
+        <div class="card liucard">
+          <div class="front face" id="card6front">
+              <a href="javascript:void(0)" class="closecard" >&times;</a>
+            <button class="flip rad-button">Know More</button>
+
+          </div>
+
+          <div class="back face" id="card6back">
+          <button class="return flip"><i class="fa fa-undo"></i></button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="cardcontainer">
+    <div class="deck">
+        <div class="card xiaofengcard">
+          <div class="front face" id="card7front">
+              <a href="javascript:void(0)" class="closecard" >&times;</a>
+            <button class="flip rad-button">Know More</button>
+
+          </div>
+
+          <div class="back face" id="card7back">
+          <button class="return flip"><i class="fa fa-undo"></i></button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+
   <audio id="buttonsound" >
   	 <source src="sounds/buttonsound.wav" type="audio/wav">
 
@@ -187,130 +303,10 @@
 </div>
   <img id="bottom" src="images/bottombar.png" width=100%>
 
-<div class="cardcontainer">
-    <div class="deck">
-        <div class="card xirancard">
-          <div class="front face" id="card0front">
-              <a href="javascript:void(0)" class="closecard" >&times;</a>
 
-            <button class="flip rad-button">Know More</button>
-
-          </div>
-
-          <div class="back face" id="card0back">
-          <button class="return flip"><i class="fa fa-undo"></i></button>
-          </div>
-        </div>
-      </div>
-  </div>
-<div class="cardcontainer">
-  <div class="deck">
-      <div class="card lornacard">
-        <div class="front face" id="card1front">
-            <a href="javascript:void(0)" class="closecard" >&times;</a>
-          <button class="flip rad-button">Know More</button>
-
-        </div>
-
-        <div class="back face" id="card1back">
-        <button class="return flip"><i class="fa fa-undo"></i></button>
-        </div>
-      </div>
-    </div>
-</div>
-<div class="cardcontainer">
-  <div class="deck">
-      <div class="card momcard">
-        <div class="front face" id="card2front">
-            <a href="javascript:void(0)" class="closecard" >&times;</a>
-          <button class="flip rad-button">Know More</button>
-
-        </div>
-
-        <div class="back face" id="card2back">
-        <button class="return flip"><i class="fa fa-undo"></i></button>
-        </div>
-      </div>
-    </div>
-</div>
-<div class="cardcontainer">
-  <div class="deck">
-      <div class="card yucard">
-        <div class="front face" id="card3front">
-            <a href="javascript:void(0)" class="closecard" >&times;</a>
-          <button class="flip rad-button">Know More</button>
-
-        </div>
-
-        <div class="back face" id="card3back">
-        <button class="return flip"><i class="fa fa-undo"></i></button>
-        </div>
-      </div>
-    </div>
-</div>
-<div class="cardcontainer">
-  <div class="deck">
-      <div class="card joshcard">
-        <div class="front face" id="card4front">
-            <a href="javascript:void(0)" class="closecard" >&times;</a>
-          <button class="flip rad-button">Know More</button>
-
-        </div>
-
-        <div class="back face" id="card4back">
-        <button class="return flip"><i class="fa fa-undo"></i></button>
-        </div>
-      </div>
-    </div>
-</div>
-<div class="cardcontainer">
-  <div class="deck">
-      <div class="card yefancard">
-        <div class="front face" id="card5front">
-            <a href="javascript:void(0)" class="closecard" >&times;</a>
-          <button class="flip rad-button">Know More</button>
-
-        </div>
-
-        <div class="back face" id="card5back">
-        <button class="return flip"><i class="fa fa-undo"></i></button>
-        </div>
-      </div>
-    </div>
-</div>
-<div class="cardcontainer">
-  <div class="deck">
-      <div class="card liucard">
-        <div class="front face" id="card6front">
-            <a href="javascript:void(0)" class="closecard" >&times;</a>
-          <button class="flip rad-button">Know More</button>
-
-        </div>
-
-        <div class="back face" id="card6back">
-        <button class="return flip"><i class="fa fa-undo"></i></button>
-        </div>
-      </div>
-    </div>
-</div>
-<div class="cardcontainer">
-  <div class="deck">
-      <div class="card xiaofengcard">
-        <div class="front face" id="card7front">
-            <a href="javascript:void(0)" class="closecard" >&times;</a>
-          <button class="flip rad-button">Know More</button>
-
-        </div>
-
-        <div class="back face" id="card7back">
-        <button class="return flip"><i class="fa fa-undo"></i></button>
-        </div>
-      </div>
-    </div>
-</div>
 
 </section>
-<script>
+<!-- <script>
 $(document).ready(function(){
   console.log("ready")
 var cards = document.getElementsByClassName("cardcontainer");
@@ -377,7 +373,7 @@ $(".flip").click(function(){
   $(this).parents(".card").toggleClass("flipped");
 });
 });
-</script>
+</script> -->
 
   </body>
 
