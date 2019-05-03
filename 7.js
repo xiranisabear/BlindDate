@@ -34,7 +34,7 @@ var conversation = false;
 
 var stage = 0;
 
-var fadespeed = 10;
+var fadespeed = 550;
 function preload() {
 
   dateYu = createImg("images/dates/date1.gif");
