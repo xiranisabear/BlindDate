@@ -572,7 +572,7 @@ $(document).ready(function() {
   $('#joshchoice6').click(function() {
     $("#joshchatbox").fadeTo(fadespeed*4, 0, 'swing', function() {
       var image = document.getElementById('talkingtoJoshbg');
-      image.src = "images/dates/josh.gif";
+      image.src = "images/dates/Josh.gif";
       datechatbox.innerHTML = "I am so sorry. I have something urgent and I need to go now. It's very nice to meet you. Maybe next time? ";
     });
     $("#joshchatbox").fadeTo(fadespeed*4, 1.0, 'swing', function() {
