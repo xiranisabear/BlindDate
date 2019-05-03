@@ -64,4 +64,16 @@ $(".flip").click(function(){
   console.log(this);
   $(this).parents(".card").toggleClass("flipped");
 });
+
+$("#chapterone").click(function(){
+window.location = 'chapter1.html';
+  });
+
+  $("#chaptertwo").click(function(){
+  window.location = 'chapter2.html';
+    });
+
+    $("#chapterthree").click(function(){
+    window.location = 'chapter3.html';
+      });
 });
