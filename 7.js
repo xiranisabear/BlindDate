@@ -517,7 +517,7 @@ $(document).ready(function() {
                   //josh comes back
                   $("#joshchatbox").fadeTo(fadespeed*4, 0, 'swing', function() {
                     var image = document.getElementById('talkingtoJoshbg');
-                    image.src = "images/dates/josh.gif";
+                    image.src = "images/dates/Josh.gif";
                     datechatbox.innerHTML = "I am so sorry. I have been pretty busy recently.";
                   });
                   $("#joshchatbox").fadeTo(fadespeed*4, 1.0, 'swing', function() {
