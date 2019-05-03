@@ -158,12 +158,12 @@ font-size: 20px;
 margin-left: 60px;
 }
 #card0front{
-  background-image:url('images/characters/mom-01.png');
+  background-image:url('images/characters/me1.png');
   background-position: center;
   background-size: contain;
 }
 #card0back{
-  background-image: url('images/characters/mom-02.png');
+  background-image: url('images/characters/me2.png');
   background-position: center;
   background-size: contain;
 }
