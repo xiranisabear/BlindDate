@@ -1,0 +1,82 @@
+<html>
+<title>Thesis - Scene 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="intro.css">
+
+<link href="https://fonts.googleapis.com/css?family=Dokdo|Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+
+<body onload="playmusic()">
+<audio id="intromusic" preload="none">
+	 <source src="sounds/intro.mp3" type="audio/mp3" autoplay loop>
+
+</audio>
+
+<audio id="buttonsound" >
+	 <source src="sounds/buttonsound.wav" type="audio/wav">
+
+</audio>
+<div class="container">
+<div class="sign">
+	<span class="sign__word">Blind</span>
+	<span class="sign__word">Date</span>
+  <button id="myButton">
+		<!-- onclick="location.href='chapter1.html'" -->
+    &#x1F354  START  &#x1F354
+  </button>
+</div>
+</div>
+
+<script>
+
+var song = document.getElementById('intromusic');
+var buttonsound = document.getElementById('buttonsound');
+var button = document.getElementById('myButton');
+
+function playmusic(){
+
+	//this is to solve the "DOMException: The play() request was interrupted" problem
+	var playPromise = song.play();
+
+ if (playPromise !== undefined) {
+	 playPromise.then(_ => {
+		 // Automatic playback started!
+		 // Show playing UI.
+	 })
+	 .catch(error => {
+		 // Auto-play was prevented
+		 // Show paused UI.
+	 });
+ }
+}
+
+button.onclick = function(){
+
+$('#intromusic').animate({volume: 0.0}, 100);
+buttonsound.play();
+
+
+
+$('body').fadeOut('slow', newpage);
+
+}
+
+function newpage() {
+window.location = 'chapter1.html';
+}
+
+</script>
+</body>
+
+
+
+
+
+
+</html>

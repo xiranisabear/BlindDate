@@ -1,0 +1,61 @@
+<html>
+<title>Thesis - Scene 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="chapters.css">
+
+<link href="https://fonts.googleapis.com/css?family=Dokdo|Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+
+<body>
+  <audio id="phone" preload="none" >
+  	 <source src="sounds/phone.mp3" type="audio/mp3">
+
+  </audio>
+
+  <audio id="yawn" preload="none" >
+     <source src="sounds/yawn.wav" type="audio/wav">
+  </audio>
+
+<div class="container">
+<img src="images/chapter2.png" id ="bg" width="100%"> </img>
+<img src="images/momcalls.png" id= "call" display:none> </img>
+<img src="images/reject.png" id="reject" width="80%"> </img>
+<img src="images/answer.png" id="answer" width="80%"display:none; onclick="location.href='6.html'" > </img>
+</div>
+
+
+<script>
+
+  $(document).ready(function(){
+    var yawn = document.getElementById('yawn');
+    yawn.volume = 1;
+    yawn.play();
+
+    $('#bg').fadeOut(5000);
+    $('#call').fadeIn(4500);
+    $('#reject').fadeIn(4500);
+    $('#answer').fadeIn(4500);
+
+
+
+   var phone = document.getElementById('phone');
+
+   yawn.addEventListener("ended", function(){
+   phone.play();
+   phone.loop = true;
+     console.log("yawn ended");
+});
+
+    });
+
+  </script>
+</body>
+
+
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Thesis - Scene 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="sidenav.css">
+<link rel="stylesheet" type="text/css" href="flipcard.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="stylesheet" type="text/css" href="button.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Dokdo|Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="script.js"></script>
+<!-- <script src="flipcard.js"></script> -->
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <button class="dropdown-btn">Characters  <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="#"><img id="character1" src="images/characters/character1.png" width=30%>
+        Xiran</a>
+      <a href="#"><img id="character2" src="images/characters/character2.png" width=30%>
+        Lorna</a>
+      <a href="#"><img id="character3" src="images/characters/character3.png" width=30%>
+        Mom</a>
+      <a href="#"><img id="character4" src="images/characters/character4.png" width=30%>
+        Yu</a>
+      <a href="#"><img id="character5" src="images/characters/character5.png" width=30%>
+        Joshua</a>
+      <a href="#"><img id="character6" src="images/characters/character6.png" width=30%>
+        YeFan</a>
+      <a href="#"><img id="character7" src="images/characters/character7.png" width=30%>
+        Liu Laoshi</a>
+      <a href="#"><img id="character8" src="images/characters/character8.png" width=30%>
+        XiaoFen</a>
+
+    </div>
+
+    <button class="dropdown-btn">Chapters  <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="#">Chapter One</a>
+      <a href="#">Chapter Two</a>
+      <a href="#">Chapter Three</a>
+
+
+    </div>
+
+
+    <a href="#">About</a>
+
+
+
+
+
+
+  </div>
+  <br>
+  <span style="font-size:15px;cursor:pointer" onclick="openNav()"> &nbsp; &nbsp;&nbsp;&nbsp;&#9776;</span>
+  <!-- <span style="font-size:15px;cursor:pointer" onclick="openNav()"> &nbsp; &nbsp;&nbsp;<img id="sidemenu" src="images/sidemenu.gif" width=8%></span> -->
+  <audio id="buttonsound" >
+  	 <source src="sounds/buttonsound.wav" type="audio/wav">
+
+  </audio>
+
+  <audio id="receive" preload="none" >
+     <source src="sounds/receive.mp3" type="audio/mp3" >
+
+  </audio>
+  <audio id="send" preload="none" >
+     <source src="sounds/send.wav" type="audio/wav" >
+
+  </audio>
+
+<section class="talkingtoLorna">
+
+
+<!-- <img id="bgimg" src="images/bg.jpg" width=100%> -->
+    <img id="top" src="images/topbar.png" width=100%>
+
+
+
+<div class="chat_container">
+
+  <div class="lorna_chat" id="chatmsg1">
+    <div class = "profile_img">
+  <img id="lornaprofile" src="images/lorna_profile.png" width=100%> </div>
+  <div class="profile_text">
+  <h1 id="lorna_name" class="names">Lorna</h1>
+  <p id="lorna_text">Hey~~ How's everything going?~</p></div>
+    </div>
+
+
+  <div class="my_chat" id="chatmsg2">
+    <div class = "profile_img_2">
+    <img id="myprofile" src="images/my_profile.png" width=100%> </div>
+  <div class="profile_text_2">
+  <h1 id="my_name" class="names">Xiran</h1>
+  <p id="my_text">😱Oh my gosh! Lorna I have to tell you something! Do you remember Cici, the girl who volunteered with me two years ago, she just got married today!</p>
+  </div>
+  </div>
+
+  <div class="my_chat"id="chatmsg3">
+    <div class = "profile_img_2">
+    <img id="myprofile" src="images/my_profile.png" width=100%> </div>
+  <div class="profile_text_2">
+  <h1 id="my_name"class="names" >Xiran</h1>
+  <p id="my_text">She is only 22. 23 at the most. And she already has a husband!</p>
+  </div>
+  </div>
+
+
+  <div class="my_chat"id="chatmsg4">
+    <div class = "profile_img_2">
+    <img id="myprofile" src="images/my_profile.png" width=100%> </div>
+  <div class="profile_text_2">
+  <h1 id="my_name" class="names">Xiran</h1>
+  <p id="my_text">I am turning 30 in two years and I do not even have a crush. Oh lord. What a life…</p>
+  </div>
+  </div>
+
+
+
+  <div class="lorna_chat"id="chatmsg5">
+    <div class = "profile_img">
+  <img id="lornaprofile" src="images/lorna_profile.png" width=100%> </div>
+  <div class="profile_text">
+  <h1 id="lorna_name" class="names">Lorna</h1>
+  <p id="lorna_text">LOL. Don’t be jealous! I mean, honestly, where have you spent all you time? I told you to date someone. It was not even a big deal.</p></div>
+    </div>
+
+    <div class="lorna_chat" id="chatmsg6">
+      <div class = "profile_img">
+    <img id="lornaprofile" src="images/lorna_profile.png" width=100%> </div>
+    <div class="profile_text">
+    <h1 id="lorna_name" class="names">Lorna</h1>
+    <p id="lorna_text">Will it be that your standard is too high above the average?</p></div>
+      </div>
+
+      <div class="lorna_chat" id="chatmsg7">
+        <div class = "profile_img">
+      <img id="lornaprofile" src="images/lorna_profile.png" width=100%> </div>
+      <div class="profile_text">
+      <h1 id="lorna_name" class="names" >Lorna</h1>
+      <p id="lorna_text">Just date someone girl. Otherwise you are turning a leftover women really.</p></div>
+        </div>
+
+<div class="my_chat" id="chatmsg8">
+  <div class = "profile_img_2">
+  <img id="myprofile" src="images/my_profile.png" width=100%> </div>
+<div class="profile_text_2">
+<h1 id="my_name" class="names">Xiran</h1>
+<p id="my_text">Lollll…I was just joking…😂😂😂</p>
+</div>
+</div>
+
+<div class="lorna_chat" id="chatmsg9">
+  <div class = "profile_img">
+<img id="lornaprofile" src="images/lorna_profile.png" width=100%> </div>
+<div class="profile_text">
+<h1 id="lorna_name" class="names" >Lorna</h1>
+<p id="lorna_text">I am not trying to give you any pressure. But DATING IS FUN! Look at me and Dean…</p></div>
+  </div>
+
+  <div class="my_chat" id="chatmsg10">
+    <div class = "profile_img_2">
+    <img id="myprofile" src="images/my_profile.png" width=100%> </div>
+  <div class="profile_text_2">
+  <h1 id="my_name" class="names" >Xiran</h1>
+  <p id="my_text">🙄Stop it! I do not want to hear any love stories of yours…</p>
+  </div>
+  </div>
+
+<button type="button" id="page1button" onclick="location.href='2.html'; button.play();"> > </button>
+
+
+</div>
+  <img id="bottom" src="images/bottombar.png" width=100%>
+
+<div class="cardcontainer">
+    <div class="deck">
+        <div class="card xirancard">
+          <div class="front face" id="card0front">
+              <a href="javascript:void(0)" class="closecard" >&times;</a>
+
+            <button class="flip rad-button">Know More</button>
+
+          </div>
+
+          <div class="back face" id="card0back">
+          <button class="return flip"><i class="fa fa-undo"></i></button>
+          </div>
+        </div>
+      </div>
+  </div>
+<div class="cardcontainer">
+  <div class="deck">
+      <div class="card lornacard">
+        <div class="front face" id="card1front">
+            <a href="javascript:void(0)" class="closecard" >&times;</a>
+          <button class="flip rad-button">Know More</button>
+
+        </div>
+
+        <div class="back face" id="card1back">
+        <button class="return flip"><i class="fa fa-undo"></i></button>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="cardcontainer">
+  <div class="deck">
+      <div class="card momcard">
+        <div class="front face" id="card2front">
+            <a href="javascript:void(0)" class="closecard" >&times;</a>
+          <button class="flip rad-button">Know More</button>
+
+        </div>
+
+        <div class="back face" id="card2back">
+        <button class="return flip"><i class="fa fa-undo"></i></button>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="cardcontainer">
+  <div class="deck">
+      <div class="card yucard">
+        <div class="front face" id="card3front">
+            <a href="javascript:void(0)" class="closecard" >&times;</a>
+          <button class="flip rad-button">Know More</button>
+
+        </div>
+
+        <div class="back face" id="card3back">
+        <button class="return flip"><i class="fa fa-undo"></i></button>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="cardcontainer">
+  <div class="deck">
+      <div class="card joshcard">
+        <div class="front face" id="card4front">
+            <a href="javascript:void(0)" class="closecard" >&times;</a>
+          <button class="flip rad-button">Know More</button>
+
+        </div>
+
+        <div class="back face" id="card4back">
+        <button class="return flip"><i class="fa fa-undo"></i></button>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="cardcontainer">
+  <div class="deck">
+      <div class="card yefancard">
+        <div class="front face" id="card5front">
+            <a href="javascript:void(0)" class="closecard" >&times;</a>
+          <button class="flip rad-button">Know More</button>
+
+        </div>
+
+        <div class="back face" id="card5back">
+        <button class="return flip"><i class="fa fa-undo"></i></button>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="cardcontainer">
+  <div class="deck">
+      <div class="card liucard">
+        <div class="front face" id="card6front">
+            <a href="javascript:void(0)" class="closecard" >&times;</a>
+          <button class="flip rad-button">Know More</button>
+
+        </div>
+
+        <div class="back face" id="card6back">
+        <button class="return flip"><i class="fa fa-undo"></i></button>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="cardcontainer">
+  <div class="deck">
+      <div class="card xiaofengcard">
+        <div class="front face" id="card7front">
+            <a href="javascript:void(0)" class="closecard" >&times;</a>
+          <button class="flip rad-button">Know More</button>
+
+        </div>
+
+        <div class="back face" id="card7back">
+        <button class="return flip"><i class="fa fa-undo"></i></button>
+        </div>
+      </div>
+    </div>
+</div>
+
+</section>
+<script>
+$(document).ready(function(){
+  console.log("ready")
+var cards = document.getElementsByClassName("cardcontainer");
+console.log(cards)
+var i;
+for (i = 0; i < cards.length; i++) {
+  cards[i].style.display = "none";
+}
+
+// var lornacard = document.getElementById('lornacard');
+$("#character1").click(function(){
+console.log("hi");
+cards[0].style.display = "block";
+});
+
+$("#character2").click(function(){
+console.log("hi");
+cards[1].style.display = "block";
+});
+
+$("#character3").click(function(){
+console.log("hi");
+cards[2].style.display = "block";
+});
+
+$("#character4").click(function(){
+console.log("hi");
+cards[3].style.display = "block";
+});
+
+$("#character5").click(function(){
+console.log("hi");
+cards[4].style.display = "block";
+});
+
+$("#character6").click(function(){
+console.log("hi");
+cards[5].style.display = "block";
+});
+
+$("#character7").click(function(){
+console.log("hi");
+cards[6].style.display = "block";
+});
+
+$("#character8").click(function(){
+console.log("hi");
+cards[7].style.display = "block";
+});
+
+$(".closecard").click(function(){
+console.log(this);
+console.log("close"+cards);
+
+var i;
+for (i = 0; i < cards.length; i++) {
+  cards[i].style.display = "none";
+}
+
+});
+
+$(".flip").click(function(){
+  console.log(this);
+  $(this).parents(".card").toggleClass("flipped");
+});
+});
+</script>
+
+  </body>
+
+  </html>

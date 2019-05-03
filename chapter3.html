@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Thesis - Scene 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="6.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="chapters.css">
+<link href="https://fonts.googleapis.com/css?family=Dokdo|Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+  <img src="images/chapter3.png" id ="bg" width="100%"> </img>
+
+
+  <div class="mom_talk" id="chatmsg1">
+  <p id="mom_text">Are you listening to me? You should really think about your thing!</p>
+    </div>
+
+    <div class="my_talk" id="chatmsg2">
+    <p id="my_text">Yes I will. It's not that I don't want to get married. I just don't know anyone who is a good candidate.</p>
+      </div>
+
+      <div class="mom_talk" id="chatmsg3">
+      <p id="mom_text">That is fine. As long as you want to meet someone, I can ask Auntie Wang to introduce someone for you.</p>
+        </div>
+
+        <div class="my_talk" id="chatmsg4">
+        <p id="my_text">...OK, I will go.</p>
+          </div>
+
+
+  </div>
+
+  <script>
+
+    $(document).ready(function(){
+
+
+      $('#bg').fadeOut(5000);
+  $("#chatmsg2").fadeTo(2000, 0.0, 'swing', function() {
+
+
+  });
+
+  $("#chatmsg2").fadeTo(1500, 1.0, 'swing', function() {
+    $("#chatmsg3").fadeTo(1500, 0.0, 'swing', function() {
+
+
+    });
+    $("#chatmsg3").fadeTo(1500, 1.0, 'swing', function() {
+      $("#chatmsg4").fadeTo(1500, 0.0, 'swing', function() {
+        $("#chatmsg4").fadeTo(1500, 1.0, 'swing', function() {
+
+          $('body').fadeOut('slow', newpage);
+
+        });
+
+      });
+
+
+
+    });
+
+    function newpage() {
+    window.location = '7.html';
+    }
+
+  });
+
+
+      });
+
+
+            </script>
+  </body>
+
+
+  </html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- use hammer.js -->
+<script src="https://hammerjs.github.io/dist/hammer.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
+<!-- this is to enable tap gesture on the phone -->
+    <!-- <script src="https://hammerjs.github.io/dist/hammer.js"></script> -->
+
+
+
+    <script src="p5.gif.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="7.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+      <script src="7.js"></script>
+  <!-- <script src="hammer.js"></script> -->
+      <!-- <div id="myElement"></div> -->
+          <!-- <script src="https://hammerjs.github.io/dist/hammer.js"></script> -->
+<!-- Josh -->
+    <div class="talkingtoDates" id="talkingtoJosh">
+      <p id="joshchatbox">Hi, you are introduced by Auntie Wang right? Nice to meet you, my name is Joshua Zhang, you can just can me Josh.</p>
+      <p id="xiranchatbox"> </p>
+      <img src='images/dates/Josh.gif' width="100%" id="talkingtoJoshbg"></img>
+      <div class="choice-container">
+      <button type="button" class="button groupA" width="80%"id="joshchoice1">Hi, I am Xiran.</button>
+      <button type="button" class="button groupA"  width="80%" id="joshchoice2">....</button>
+
+      <button type="button" class="button groupB" width="80%"id="joshchoice3">Yes, my English name is...</button>
+      <button type="button" class="button groupB"  width="80%"id="joshchoice4">Just Xiran.</button>
+
+      <button type="button" class="button groupC" width="80%"id="joshchoice5">...</button>
+
+      <button type="button" class="button groupD" width="80%"id="joshchoice6">Wait for him to come back.</button>
+      <button type="button" class="button groupD"  width="80%" id="exitJosh">Leave</button>
+
+      </div>
+    </div>
+    <!-- <button id="walkbutton" type="button"> > </div> -->
+<!-- Yu -->
+<div class="talkingtoDates" id="talkingtoYu">
+  <p id="yuchatbox">Hi, Nice to meet you. You look better than your photo. Though your age…
+</p>
+  <p id="xiranchatbox2"> </p>
+  <img src='images/dates/Yu.gif' width="100%" id="talkingtoYu"></img>
+  <div class="choice-container">
+  <button type="button" class="button groupE" width="80%" id="yuchoice1">You are 30 this year right?</button>
+  <button type="button" class="button groupE"  width="80%" id="yuchoice2">My age?</button>
+  <button type="button" class="button groupF" width="80%"id="yuchoice3">I do not really like kids.</button>
+  <button type="button" class="button groupF"  width="80%"id="yuchoice4">Well, I like kids. But </button>
+  <button type="button" class="button groupG" width="80%"id="yuchoice5">Ok, I got it.  What do you like to do during your spare time?</button>
+  <button type="button" class="button groupH"  width="80%" id="yuchoice6">I think it is really really early.</button>
+    <button type="button" class="button groupH"  width="80%" id="exitYu">Leave</button>
+
+  </div>
+</div>
+
+<!-- Xiaofen -->
+<div class="talkingtoDates" id="talkingtoXiaofen">
+  <p id="xiaofengchatbox">Hi, Jiejie!(elder sister)</p>
+  <p id="xiranchatbox3"> </p>
+  <img src='images/dates/Xiaofen.gif' width="100%" id="talkingtoXiaofen"></img>
+  <div class="choice-container">
+  <button type="button" class="button groupI" width="80%" id="xiaofengchoice1">Jiejie?</button>
+  <button type="button" class="button groupI"  width="80%" id="xiaofengchoice2">I don't like...</button>
+
+  <button type="button" class="button groupJ" width="80%" id="xiaofengchoice3">Wow, it is.</button>
+  <button type="button" class="button groupJ"  width="80%" id="xiaofengchoice4">How do you know?</button>
+  <button type="button" class="button groupK" width="80%"id="xiaofengchoice5">We should go shopping together.</button>
+    <button type="button" class="button groupK" width="80%"id="xiaofengchoice6">Graphic Designer?</button>
+  <button type="button" class="button groupL"  width="80%" id="exitXiaofen">Cool.</button>
+
+  </div>
+</div>
+
+<!-- Yefan -->
+<div class="talkingtoDates" id="talkingtoYefan">
+  <p id="Yefanchatbox">Hi, you are Xiran right? I am Ye! Nice to meet you.</p>
+  <p id="xiranchatbox4"> </p>
+  <img src='images/dates/Yefan.gif' width="100%" id="talkingtoYefan"></img>
+  <div class="choice-container">
+  <button type="button" class="button groupM" width="80%" id="yefanchoice1">Yeah, I am Xiran.</button>
+  <!-- <button type="button" class="button groupM"  width="80%">....</button> -->
+  <button type="button" class="button groupN" width="80%" id="yefanchoice2">Cool so what do you do?</button>
+  <button type="button" class="button groupN"  width="80%"id="yefanchoice3">Sort of?</button>
+  <button type="button" class="button groupO" width="80%" id="yefanchoice4">Wow that is pretty cool!</button>
+    <button type="button" class="button groupO" width="80%" id="yefanchoice5">Is that your full-time job?</button>
+        <button type="button" class="button groupP" width="80%" id="yefanchoice6">Did I just hear 'kids'?</button>
+            <button type="button" class="button groupQ" width="80%" id="yefanchoice7">I like kids though.</button>
+  <button type="button" class="button groupQ"  width="80%" id="exitYefan">Oops.</button>
+
+  </div>
+</div>
+
+
+<!-- Liulaoshi -->
+<div class="talkingtoDates" id="talkingtoLiulaoshi">
+  <p id="Liulaoshichatbox">Hi, I am Liu...(smile)</p>
+  <p id="xiranchatbox5"> </p>
+  <img src='images/dates/Liulaoshi.gif' width="100%" id="talkingtoLiulaoshi"></img>
+  <div class="choice-container">
+  <button type="button" class="button groupR" width="80%" id="liuchoice1">Hi, let's introduce...</button>
+  <button type="button" class="button groupR"  width="80%" id="liuchoice2">...</button>
+
+  <button type="button" class="button groupS" width="80%" id="liuchoice3">I went to grad school...</button>
+  <button type="button" class="button groupS"  width="80%" id="liuchoice4">Do you plan to stay there?</button>
+
+  <button type="button" class="button groupT" width="80%"id="liuchoice5">SO?</button>
+    <!-- <button type="button" class="button groupU" width="80%"id="liuchoice6">Keep talking.</button> -->
+  <button type="button" class="button groupU"  width="80%" id="exitLiulaoshi">Thanks.</button>
+
+  </div>
+</div>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,84 @@
+/*-- Base Styles --*/
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+
+#intromusic{
+  display:none;
+}
+.container{
+  width:100%;
+  heigt:100%;
+  margin:auto;
+}
+body {
+  font-family: "Dokdo";
+  font-size: 1rem;
+  /* background-image: url("https://www.dropbox.com/s/2ct0i6kc61vp0bh/wall.jpg?raw=1"); */
+  background-color: black;
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #141414; */
+}
+
+/*-- Sign Styles --*/
+.sign {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sign__word {
+  font-size: 5.6rem;
+  text-align: center;
+  line-height: 1;
+  /* color: #c6e2ff; */
+  color:#ffc6ec;
+  animation: neon 0.08s ease-in-out infinite alternate;
+}
+
+/*-- Animation Keyframes --*/
+@keyframes neon {
+  from {
+    text-shadow: 0 0 6px rgba(228, 202, 210, 0.92), 0 0 30px rgba(228, 202, 210, 0.34), 0 0 12px rgba(241, 30, 86, 0.52), 0 0 21px rgba(241, 30, 86, 0.92), 0 0 34px rgba(241, 30, 68, 0.78), 0 0 54px rgba(241, 30, 68, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(228, 202, 210, 0.98), 0 0 30px rgba(228, 202, 210, 0.42), 0 0 12px rgba(241, 30, 86, 0.58), 0 0 22px rgba(241, 30, 86, 0.84), 0 0 38px rgba(241, 30, 68, 0.88), 0 0 60px #f11e44;
+  }
+}
+
+#myButton {
+
+position:relative;
+margin-top:10%;
+	-moz-box-shadow: 3px 4px 0px 0px #fbafe3;
+	-webkit-box-shadow: 3px 4px 0px 0px #fbafe3;
+	box-shadow: 3px 4px 0px 0px #fbafe3;
+	background-color:#ef027d;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Dokdo;
+	font-size:18px;
+	padding:7px 50px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #c70067;
+}
+.myButton:hover {
+	background-color:#ef027d;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

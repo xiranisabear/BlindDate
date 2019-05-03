@@ -1,0 +1,49 @@
+<html>
+<title>Thesis - Scene 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="chapters.css">
+
+<link href="https://fonts.googleapis.com/css?family=Dokdo|Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+
+<body>
+  <audio id="phone" preload="none" autoplay loop>
+  	 <source src="sounds/phone.mp3" type="audio/mp3" autoplay loop>
+
+  </audio>
+
+<div class="container">
+<img  src="images/chapter1.png" id ="bg" width="100%"> </img>
+<img src="images/chatbox.png" id="chatbox" display:none; onclick="location.href='1.html'"> </img>
+</div>
+
+
+<script>
+
+  $(document).ready(function(){
+    $('#bg').fadeOut(5000);
+    $('#chatbox').fadeIn(5000);
+  var phone = document.getElementById('phone');
+  if (phone.readState == 4) {
+  phone.play();
+  console.log("should play");
+} else {
+    console.log("else")
+  phone.addEventListener('canplay', function() {
+    phone.play();
+      console.log("event")
+  })
+}
+    });
+
+  </script>
+</body>
+
+
+</html>

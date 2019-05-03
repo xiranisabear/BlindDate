@@ -1,0 +1,205 @@
+body{
+  background-color: #e01a4f;
+  margin:0;
+  font-family: "Dokdo";
+
+}
+canvas{
+  font-family: "Dokdo";
+  height:100%;
+  width:100%;
+}
+
+#walkbutton{
+  position: absolute;
+  left:80%;
+  top:50%;
+
+
+  border-style: hidden;
+  border-radius: 50%;
+
+  font-size:6vw;
+  padding-left:10px;
+  padding-right:10px;
+  /* padding-top:10px;
+  padding-bottom:10px; */
+  font-family: 'Dokdo';
+  color:#FFFFE7;
+    background-color: #9c89b8;
+  transition: all 0.5s;
+  cursor: pointer;
+  content: \00bb;
+}
+
+.talkingtoDates{
+  display:none;
+  position: absolute;
+  z-index: 1;
+}
+
+.choice-container{
+  position: absolute;
+  z-index: 1;
+  top:70%;
+  width:100%;
+  margin: auto;
+
+}
+
+.button{
+  background-color: rgba(255,255,255,.5);
+  font-family: "Dokdo";
+  font-size: 6vw;
+  width:100%;
+
+  padding:20px;
+}
+
+.groupA{
+  display:none;
+  margin-left: 10%;
+  width: 80%;
+}
+.groupB{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+.groupC{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+
+.groupD{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+
+.groupE{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+
+.groupF{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+
+.groupG{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+
+.groupH{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+
+.groupI{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+
+.groupJ{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+
+.groupK{
+  display:none;
+  margin-left: 10%;
+  width: 80%;
+}
+
+.groupL{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+
+.groupM{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+
+.groupN{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+
+.groupO{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+
+.groupP{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+
+.groupQ{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+
+.groupR{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+
+.groupS{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+.groupT{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+.groupU{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+
+
+#joshchatbox,#yuchatbox,#xiaofengchatbox,#Yefanchatbox, #Liulaoshichatbox{
+
+  position: absolute;
+  top:0%;
+  text-align: justify;
+  margin:10%;
+  padding:10px;
+  border-radius: 10px;
+  background-color: rgb(249, 184, 0);
+  font-size:5vw;
+}
+
+
+#xiranchatbox, #xiranchatbox2, #xiranchatbox3, #xiranchatbox4, #xiranchatbox5{
+
+  position: absolute;
+  top:50%;
+  text-align: justify;
+  margin:10%;
+  padding:10px;
+  border-radius: 10px;
+  background-color: rgb(0, 212, 155);
+  font-size:5vw;
+}

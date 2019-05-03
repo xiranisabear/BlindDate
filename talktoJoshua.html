@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>Thesis - Scene 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="sidenav.css">
+<link rel="stylesheet" type="text/css" href="flipcard.css">
+<link rel="stylesheet" type="text/css" href="talktodates.css">
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Dokdo|Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+  <script>
+    $(document).ready(function(){
+    $('#talkingtoJosh').fadeIn(1000);
+
+
+    $('.groupA').click(function(){
+      console.log("clicked");
+      var groupA = document.getElementsByClassName('groupA');
+      var groupB= document.getElementsByClassName('groupB');
+
+      var i;
+      for(i = 0;i<groupA.length;i++){
+        groupA[i].style.display = "none";
+          groupB[i].style.display = "block";
+      }
+    });
+
+    $('.groupB').click(function(){
+      console.log("clicked");
+      var groupB = document.getElementsByClassName('groupB');
+      var groupC= document.getElementsByClassName('groupC');
+
+      var i;
+      for(i = 0;i<groupB.length;i++){
+        groupB[i].style.display = "none";
+          groupC[i].style.display = "block";
+      }
+    });
+
+    $('#exit').click(function(){
+      window.location = '7.html';
+    });
+
+
+        });
+    </script>
+
+<img src='images/josh.gif' width="100%" id="talkingtoJosh"></img>
+<div class="choice-container">
+<button type="button" class="button groupA" width="80%">Hi</button>
+<button type="button" class="button groupA"  width="80%">....</button>
+
+<button type="button" class="button groupB" width="80%">GroupB</button>
+<button type="button" class="button groupB"  width="80%">GroupB.</button>
+
+
+<button type="button" class="button groupC" width="80%">GroupC</button>
+<button type="button" class="button groupC"  width="80%" id="exit">Exit</button>
+
+</div>
+  </body>
+
+
+</html>

@@ -1,0 +1,45 @@
+body{
+  font-family: "Dokdo";
+  background-color: #69C6B3;
+  margin:auto;
+  width:100%;
+}
+
+/* button{
+  position: absolute;
+  background-color: yellow;
+  z-index: 2;
+} */
+
+.choice-container{
+  position: absolute;
+  z-index: 1;
+  top:75%;
+  width:100%;
+  margin: auto;
+
+}
+
+.button{
+  background-color: rgba(255,255,255,.5);
+  font-family: "Dokdo";
+  font-size: 6vw;
+  width:100%;
+
+  padding:20px;
+}
+
+.groupA{
+    margin-left: 10%;
+  width: 80%;
+}
+.groupB{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}
+.groupC{
+  display:none;
+    margin-left: 10%;
+  width: 80%;
+}

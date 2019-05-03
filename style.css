@@ -1,0 +1,232 @@
+
+
+#receive{
+  display:none;
+}
+
+#send{
+  display:none;
+}
+
+#button{
+  display:none;
+}
+
+/* #p5button{
+  display:none;
+  position: absolute;
+  top:80%;
+  left:45%;
+
+  border-style: hidden;
+  border-radius: 50%;
+
+  color:#FFFFE7;
+    background-color: #9c89b8;
+
+  font-size:12vw;
+  padding-left:50px;
+  padding-right:50px;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-family: 'Dokdo';
+
+  transition: all 0.5s;
+  cursor: pointer;
+  content: \00bb;
+
+
+} */
+
+.names{
+  font-family: Dokdo;
+  font-size: 6vw;
+}
+
+body{
+  margin:auto;
+  height: 100%;
+  width: 100%;
+  background-color: #f7b32b;
+
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: "Dokdo"
+  /* font-family: 'Do Hyeon', sans-serif; */
+/*
+  font-family: 'Patrick Hand SC', cursive; */
+
+}
+#top{
+  z-index: -1;
+  position:absolute;
+  top:0%;
+  width: 100%;
+  object-fit:cover;
+}
+#bgimg{
+  position:relative;
+  width: 100%;
+  min-height: 1500px;
+  object-fit:cover;
+}
+
+#bottom{
+z-index: 1;
+  position:fixed;
+  bottom:0%;
+}
+.chat_container{
+  top:15%;
+  position: absolute;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.lorna_chat{
+  flex-direction: row;
+
+}
+
+#chatmsg1{
+  display: none;
+}
+#chatmsg2{
+  display: none;
+}
+#chatmsg3{
+  display: none;
+}
+#chatmsg4{
+  display: none;
+}
+#chatmsg5{
+  display: none;
+}
+#chatmsg6{
+  display: none;
+}
+#chatmsg7{
+  display: none;
+}
+#chatmsg8{
+  display: none;
+}
+#chatmsg9{
+  display: none;
+}
+#chatmsg10{
+  display: none;
+}
+
+.profile_img{
+  float: left;
+  width:18%;
+  padding-left: 10px;
+
+}
+.profile_text{
+  float: left;
+
+  width:70%;
+  margin-bottom: 20px;
+}
+
+#lornaprofile{
+  /* position: absolute; */
+  border-radius: 10px;
+
+  width:85%;
+  /* top:15%; */
+}
+
+#lorna_name{
+  width:20%;
+  margin-top: 0;
+  margin-bottom: 5px;
+
+  color:black;
+}
+
+#lorna_text{
+text-align: justify;
+margin:0px;
+padding:10px;
+border-radius: 10px;
+background-color: rgb(255, 255, 255);
+font-size:4vw;
+}
+
+
+/* xiran */
+.my_chat{
+  flex-direction: row;
+
+}
+
+.profile_img_2{
+  float: right;
+  width:18%;
+  padding-right: 10px;
+
+}
+.profile_text_2{
+
+  float: right;
+  width:70%;
+  margin-bottom: 20px;
+}
+
+#myprofile{
+  /* position: absolute; */
+  border-radius: 10px;
+
+  width:85%;
+  /* top:15%; */
+}
+
+#my_name{
+
+  text-align: right;
+  width:95%;
+  margin-top: 0;
+  margin-bottom: 5px;
+
+  color:black;
+}
+
+#my_text{
+text-align: justify;
+margin:0px;
+margin-right: 10px;
+padding:10px;
+border-radius: 10px;
+background-color: rgb(160, 231, 90);
+
+/* background: url(images/chatbg1.png) no-repeat; */
+
+font-size:4vw;
+}
+
+
+#page1button{
+
+    position: absolute;
+    top:88%;
+    left:70%;
+    border-style: hidden;
+    border-radius: 50%;
+    color:#FFFFE7;
+      background-color: #9c89b8;
+    font-size:12vw;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-family: 'Dokdo';
+
+    transition: all 0.5s;
+    cursor: pointer;
+    content: \00bb;
+
+
+}
