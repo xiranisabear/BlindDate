@@ -2,6 +2,7 @@
 var page3button = document.getElementById('page3_button');
 page3button.style.display = "none";
 var aText = new Array(
+  "~Diary 003~",
   "Once I went to college,",
   "my attentions was drawn to so many new things.",
   "I was busy with tests, clubs, internships and applying towards graduate schools.",
@@ -39,7 +40,7 @@ function typewriter()
  } else {
   setTimeout("typewriter()", iSpeed);
  }
- if(iIndex == 7){
+ if(iIndex == 8){
 console.log("finished");
 page3button.style.display = "block";
  }

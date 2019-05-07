@@ -2,6 +2,7 @@
 var page3button = document.getElementById('page3_button');
 page3button.style.display = "none";
 var aText = new Array(
+  "~Diary 001~",
   "When I  was in elementary school,",
   "I used to love this little boy. ",
   "He was one of the most naughty kids among all students.",
@@ -40,7 +41,7 @@ function typewriter()
  } else {
   setTimeout("typewriter()", iSpeed);
  }
- if(iIndex == 8){
+ if(iIndex == 9){
 console.log("finished");
 page3button.style.display = "block";
  }

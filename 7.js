@@ -249,7 +249,7 @@ pop();
     if (stage==3&&date4 == 1&&!conversation) {
       conversation = true;
       newdate = true;
-      console.log("triggerthetalk2")
+      console.log("triggerthetalkyefan")
       var xiranchatbox4=document.getElementById('xiranchatbox4');
       xiranchatbox4.style.display = 'none';
       // window.location = 'talktoJoshua.html';
@@ -271,6 +271,10 @@ pop();
 
     if (distance1 < -2050) {
       date5 = 1;
+    }
+///here to ending
+    if(distance1< -2600){
+       window.location = 'ending.html';
     }
 
 

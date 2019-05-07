@@ -2,6 +2,7 @@
 var page3button = document.getElementById('page3_button');
 page3button.style.display = "none";
 var aText = new Array(
+  "~Diary 002~",
   "I had a crash when I was in middle school.",
   "He was taller than most boys at that time.",
   "I do not know if it was because he played a lot basketball.",
@@ -40,7 +41,7 @@ function typewriter()
  } else {
   setTimeout("typewriter()", iSpeed);
  }
- if(iIndex == 8){
+ if(iIndex == 9){
 console.log("finished");
 page3button.style.display = "block";
  }

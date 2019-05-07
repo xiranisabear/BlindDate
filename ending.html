@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blind Date</title>
+<link rel="shortcut icon" type="image/png" href="images/logo.jpg"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="6.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="chapters.css">
+<link href="https://fonts.googleapis.com/css?family=Dokdo|Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+  <img src="images/ending.png" id ="ending" width="100%"> </img>
+
+
+  <div class="mom_talk" id="chatmsg1">
+  <p id="mom_text">How was your dates? Did you find anyone good?</p>
+    </div>
+
+    <div class="my_talk" id="chatmsg2">
+    <p id="my_text">Well, some of them are very nice, but I am not sure...I feel like I need more time to think about everything...</p>
+      </div>
+
+      <div class="mom_talk" id="chatmsg3">
+      <p id="mom_text">Ok, as long as you are happy. But how long do you think you need? </p>
+        </div>
+
+        <div class="my_talk" id="chatmsg4">
+        <p id="my_text">Emmmmmmm...</p>
+          </div>
+
+
+  </div>
+
+  <script>
+
+    $(document).ready(function(){
+var bg = document.getElementById('ending');
+   bg.style.display ='none';
+
+      // $('#bg').fadeOut(5000);
+  $("#chatmsg2").fadeTo(2000, 0.0, 'swing', function() {
+
+
+  });
+
+  $("#chatmsg2").fadeTo(1500, 1.0, 'swing', function() {
+    $("#chatmsg3").fadeTo(1500, 0.0, 'swing', function() {
+
+
+    });
+    $("#chatmsg3").fadeTo(1500, 1.0, 'swing', function() {
+      $("#chatmsg4").fadeTo(1500, 0.0, 'swing', function() {
+        $("#chatmsg4").fadeTo(1500, 1.0, 'swing', function() {
+          var bg = document.getElementById('ending');
+bg.style.display = "block";
+    $('#bg').fadeIn(5000);
+$('#chatmsg1').fadeOut(3000);
+$('#chatmsg2').fadeOut(3000);
+$('#chatmsg3').fadeOut(3000);
+$('#chatmsg4').fadeOut(3000);
+
+
+
+        });
+
+      });
+
+
+
+    });
+
+    // function newpage() {
+    // window.location = '7.html';
+    // }
+
+  });
+
+
+      });
+
+
+            </script>
+  </body>
+
+
+  </html>
