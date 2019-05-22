@@ -3,7 +3,7 @@ var page3button = document.getElementById('page3_button');
 page3button.style.display = "none";
 var aText = new Array(
   "~Diary 002~",
-  "I had a crash when I was in middle school.",
+  "I had a crush when I was in middle school.",
   "He was taller than most boys at that time.",
   "I do not know if it was because he played a lot basketball.",
   "I remember that he had a very beautiful smile,",
